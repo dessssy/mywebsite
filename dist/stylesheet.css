@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1280px) {
+
+/* COMMON */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.prime-wrapper, 
+.container2,
+.sub-container,
+header.content-wrap,
+div.main-content {
+    display: grid;
+}
+
+.aboutMe,
+.projects,
+.contactMe,
+footer.content-wrap {
+    margin-top: 10px;
+}
+
+.aboutMe,
+.origin,
+.education,
+.contributions,
+.projects {
+    display: flex;
+}
+
+.origin,
+.education,
+.contributions {
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.origin,
+.education,
+.container2 {
+    margin-bottom: 20px;
+}
+
+.home-pic,
+.toga-pic,
+.world-pic {
+    height: 130px;
+    width: 130px;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.projects-heading,
+.subHeading,
+.moving-header,
+.intro,
+a,
+.text,
+footer {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* UTILS */
+
+.prime-wrapper {
+    background-image: url(images/bg2.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    padding: 0 15px 13px;
+    text-decoration: none;
+    color:#000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.aboutMe {
+    margin-left: 30px;
+}
+
+.text {
+    line-height: 20px;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+
+/* BODY */
+
+body.prime-wrapper {
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.funny-btn {
+    position: absolute;
+    display: none;
+}
+
+/* HEADER */
+
+header.content-wrap {
+    height: 50px;
+    grid-template-columns: 2fr 2fr 3fr;
+    align-items: center;
+}
+
+/* NAVIGATION */
+
+nav.container1 {
+    grid-column-start: 3;
+    grid-column-end: -1;
+}
+
+.icon-pacman:before {
+    content: "\e916";
+    font-size: 16px;
+  }
+
+  .icon-books:before {
+    content: "\e920";
+  }
+
+  .icon-briefcase:before {
+    content: "\e9ae";
+  }
+
+  .icon-bubbles2:before {
+    content: "\e96d";
+  }
+
+nav.container1 > ul {
+    display:flex;
+}
+
+.prime-level-nav {
+    justify-content: center;
+}
+
+.prime-level-nav > li {
+    position: relative;
+}
+
+.prime-level-nav > li > a {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.prime-level-nav > li > a:hover {
+    color:#993F8E;
+}
+
+.prime-level-nav > li:hover .second-level-nav  {
+    display: block;
+}
+
+.second-level-nav {
+    display: none;
+    position: absolute;
+}
+
+.second-level-nav > li {
+    padding: 2px 0;
+}
+
+.second-level-nav > li > a:hover {
+    color: #f9f9f9;
+}
+
+/* ASIDE */
+
+.brand-btns {
+    top: 250px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+}
+
+.brand-btns > a:hover {
+    cursor: pointer;
+}
+
+.expand-img:hover {
+    width: 35px;
+    height: 35px;
+}
+
+/* MAIN */
+
+.sub-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    font-size: 50px;
+}
+
+.bolder {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 70px;
+}
+
+.moving-button {
+    margin-top: 30px;
+    position: relative;
+    animation: scrollDown 2s infinite;
+}
+
+.icon-circle-down:before {
+    content: "\ea43";
+    font-size: 30px;
+  }
+
+/* SECTIONS */
+
+.aboutMe {
+    background-color: #fff;
+    justify-content: space-evenly;
+}
+
+.moving-header {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.home-pic {
+    background-image: url(images/maps-line.svg);
+}
+
+.toga-pic {
+    background-image: url(images/legal-agreement-contract-paper.svg);
+}
+
+.world-pic {
+    background-image: url(images/bulb-checkmark.svg);
+}
+
+.contributions {
+    margin-right: 30px;
+}
+
+.projects {
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-flashguba,
+#project-rolle {
+    background-color: #4B003F;
+    color: #fff;
+}
+
+
+.project-rolle {
+    padding-top: 30px;
+}
+
+.screenshot-place {
+    width: 600px;
+}
+
+.projects-heading {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 80px;
+}
+
+.subHeading {
+    margin-bottom: 20px;
+}
+
+.project-text {
+    width: 900px;
+    margin-top: 40px;
+}
+
+.gitHub-sc {
+    margin-top: 50px;
+}
+
+.sc-link {
+    color: #fff;
+    font-weight: normal;
+}
+
+/* FOOTER */
+
+footer.content-wrap {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer.content-wrap a {
+    font-size: 13px;
+}
+
+
+@keyframes scrollDown {
+    0% {top: 0px;}
+    50% {top: 20px;}
+    100% {top: 0px;}
+}
+
+}
